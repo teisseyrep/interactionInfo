@@ -1,0 +1,10 @@
+Package: interactionInfo
+Type: Package
+Title: Statistical tests for Interaction Information
+Version: 0.1.0
+Author: Pawel Teisseyre [aut,cre], Jan Mielniczuk [aut]
+Maintainer: Pawel Teisseyre <teisseyrep@ipipan.waw.pl>
+Description: The package contains functions for testing the positiveness of the Interaction Information.
+License: GPL-2
+LazyData: TRUE
+Imports: infotheo, entropy
