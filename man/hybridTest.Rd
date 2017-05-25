@@ -61,7 +61,7 @@ A list with class "hybridTest" containing the following components:
   \item{type}{Type of the test used in the hybrid procedure. The possible values are: "permTest" if the permutation test was used and "chisqTest" if the chi sqaured test was used.}
 }
 \references{
-Pawel Teisseyre, Jan Mielniczuk, An information theory approach to discover hidden associations and interactions  in biomedical data, manuscript, 2017.
+Pawel Teisseyre, Jan Mielniczuk, Michal J. Dabrowski, Detection of hidden associations and interactions in biomedical data using Interaction Information, manuscript, 2017.
 }
 \author{
 Pawel Teisseyre

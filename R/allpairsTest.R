@@ -1,4 +1,4 @@
-allpairsTest = function(x,y,calculateTest=TRUE,type="hybridTest",nbins=NULL,alpha=0.05,alpha0=0.05,B=1000,method="emp")
+allpairsTest = function(x,y,calculateTest=TRUE,type="hybridTest",nbins=NULL,alpha=0.05,alpha0=0.05,B=1000,method="emp",trace=TRUE)
 {
 
   if(!type%in%c("hybridTest","permTest","chisqTest")) stop("Incorrect type!")
@@ -35,11 +35,13 @@ allpairsTest = function(x,y,calculateTest=TRUE,type="hybridTest",nbins=NULL,alph
 
   s=1
   for(i in 1:ncombs){
+    if(trace){
     if(ncombs>1000){
       if(i%%1000==0){
         cat("Pair ",i/1000," out of", ceiling(ncombs/1000)," thousands \n")
       }
     }
+  }
     labelsSel = combs[,i]
     x1 = x[,labelsSel[1]]
     x2 = x[,labelsSel[2]]

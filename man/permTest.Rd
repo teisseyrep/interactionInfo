@@ -53,7 +53,7 @@ A list with class "permTest" containing the following components:
   \item{B}{Number of permutations.}
 }
 \references{
-Pawel Teisseyre, Jan Mielniczuk, An information theory approach to discover hidden associations and interactions  in biomedical data, manuscript, 2017.
+Pawel Teisseyre, Jan Mielniczuk, Michal J. Dabrowski, Detection of hidden associations and interactions in biomedical data using Interaction Information, manuscript, 2017.
 }
 \author{
 Pawel Teisseyre

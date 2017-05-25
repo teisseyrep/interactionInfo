@@ -8,7 +8,7 @@ Tests for the Interaction Information for several pairs of variables.
 The function performs tests for the positeveness of Interaction Information (chi squared test, permutation test or hybrid test) for all pairs in the data set.
 }
 \usage{
-allpairsTest(x,y,calculateTest=TRUE,type="hybridTest",nbins=NULL,alpha=0.05,alpha0=0.05,B=1000,method="emp")
+allpairsTest(x,y,calculateTest=TRUE,type="hybridTest",nbins=NULL,alpha=0.05,alpha0=0.05,B=1000,method="emp",trace=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -39,6 +39,9 @@ Number of permutations, the default value is 1000.
 \item{method}{
 The method used to estimate entropy. See function interinformation in R package infotheo for details.
 }
+\item{trace}{
+Logical variable indicating whether to print the analysis progress.
+}
 }
 \details{
 The function computes the Interaction Information I(xi,xj;y), where xi and xj are variables in x (columns of matrix x), for all pairs (xi,xj).
@@ -48,7 +51,7 @@ If the variables xi, xj, y are not factors, they are discretized using 'discreti
 Data frame containing 4 (or 3 if calculateTest=FALSE) columns: index of the first variable, index of the second variable, Interaction Information, p-value.
 }
 \references{
-Pawel Teisseyre, Jan Mielniczuk, An information theory approach to discover hidden associations and interactions  in biomedical data, manuscript, 2017.
+Pawel Teisseyre, Jan Mielniczuk, Michal J. Dabrowski, Detection of hidden associations and interactions in biomedical data using Interaction Information, manuscript, 2017.
 }
 \author{
 Pawel Teisseyre
